@@ -1,5 +1,4 @@
 ActiveAdmin.register Customer do
-  actions :index, :edit, :update, :create, :destroy
   permit_params :full_name, :phone_number, :email_address, :notes, :image
 
   form do |f|
