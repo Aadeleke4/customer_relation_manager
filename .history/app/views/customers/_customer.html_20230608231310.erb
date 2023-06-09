@@ -2,7 +2,7 @@
   <div class="columns is-mobile is-multiline is-flex">
     <% @customers.each do |customer| %>
       <div class="column is-3 has-fixed-height">
-      <div class="box">
+
           <h3 class="has-text-weight-bold mb-5"><%= customer.full_name %></h3>
           <figure class="image is-2by3">
             <%= image_tag customer.image %>
@@ -15,7 +15,7 @@
             <p>Notes: <%= customer.notes %></p>
           <% end %>
         </div>
-</div>
+
      <% end %>
   </div>
 </div>
