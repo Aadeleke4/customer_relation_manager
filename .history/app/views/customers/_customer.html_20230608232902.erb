@@ -3,7 +3,7 @@
     <% @customers.each do |customer| %>
       <div class="column is-3 has-fixed-height" style="display: flex;">
       <div class="box" style="flex-grow: 1;">
-          <h2 class="has-text-weight-bold mb-5"><%= customer.full_name %></h2>
+          <h3 class="has-text-weight-bold mb-5"><%= customer.full_name %></h3>
           <figure class="image is-2by3">
             <%= image_tag customer.image %>
           </figure>
