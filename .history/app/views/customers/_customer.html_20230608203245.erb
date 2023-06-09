@@ -1,6 +1,7 @@
 <div class="box">
   <div class="columns is-moile is-gapless">
     <div class="column">
+    <div class="card">
       <h3 class="has-text-weight-bold"><%= customer.full_name %></h3>
       <figure class="image is-128x128">
         <%= image_tag customer.image %>
@@ -12,6 +13,7 @@
       <% if customer.notes.present? %>
         <p>Notes: <%= customer.notes %></p>
       <% end %>
+      </div>
     </div>
   </div>
 </div>
