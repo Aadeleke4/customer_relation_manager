@@ -1,12 +1,7 @@
-<div class="columns">
-<div class="column">
- <h3><%= customer.full_name %></h3>
- <figure class="image is-4by5">
+<div class="customer">
   <%= image_tag customer.image %>
-</figure>
-
-
-  <p>Phone: <%= number_to_phone(customer.phone_number, area_code: true, delimiter: '-') %></p>
+  <h3><%= customer.full_name %></h3>
+  <p>Phone: <%= customer.phone_number %></p>
 
    <% if customer.email_address.present? %>
       <p>Email: <%= customer.email_address %></p>
@@ -16,5 +11,4 @@
       <p>Notes: <%= customer.notes %></p>
     <% end %>
 
-</div>
 </div>

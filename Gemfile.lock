@@ -273,7 +273,7 @@ PLATFORMS
 DEPENDENCIES
   activeadmin
   bootsnap
-  bulma-rails
+  bulma-rails (~> 0.9.4)
   capybara
   debug
   devise

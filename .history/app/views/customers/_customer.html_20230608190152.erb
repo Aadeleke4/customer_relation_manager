@@ -1,10 +1,7 @@
 <div class="columns">
 <div class="column">
  <h3><%= customer.full_name %></h3>
- <figure class="image is-4by5">
   <%= image_tag customer.image %>
-</figure>
-
 
   <p>Phone: <%= number_to_phone(customer.phone_number, area_code: true, delimiter: '-') %></p>
 
