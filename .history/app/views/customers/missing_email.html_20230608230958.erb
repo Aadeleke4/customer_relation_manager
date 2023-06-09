@@ -1,0 +1,6 @@
+<h1  class="is-size-2"><strong>All Customers</strong></h1>
+
+<%= render partial: 'customer', locals: { customers: @customers } %>
+
+<%= link_to 'Alphabetized', alphabetized_customers_path %>
+<%= link_to 'Back to Index', root_path %>

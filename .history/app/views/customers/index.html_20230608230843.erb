@@ -1,0 +1,10 @@
+<h1 class="is-size-2"><strong>All Customers</strong></h1>
+
+<%= render partial: 'customer', locals: { customers: @customers }  %>
+
+
+
+<%= link_to 'Missing Email' 'Button', missing_email_customers_path, class: 'button is-link' %>
+<%= link_to 'Alphabetized' 'Button', alphabetized_customers_path class: 'button is-link'  %>
+
+
