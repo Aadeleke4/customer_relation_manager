@@ -1,7 +1,8 @@
 <h1 class="is-size-2"><strong>All Customers</strong></h1>
 
-<%= render partial: 'customer', collection: @customers %>
-
+<% @customers.each do |customer| %>
+      <%= render partial: 'customer', locals: { customer: customer } %>
+    <% end %>
 
 
 <%= link_to 'Missing Email', missing_email_customers_path %>
