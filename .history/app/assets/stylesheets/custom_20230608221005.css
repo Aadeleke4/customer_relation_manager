@@ -1,9 +1,0 @@
-
-  .is-flex {
-    display: flex;
-    align-items: stretch;
-  }
-
-  .box {
-    flex-grow: 1;
-  }
